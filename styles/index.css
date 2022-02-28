@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0;
+}
+
+.wrap {
+  position: relative;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  min-width: 350px;
+  min-height: 650px;
+  border: solid rgba(0, 0, 0, 0.308) 1px;
+  margin: 15px;
+}
+
+div.card > * {
+  position: absolute;
+}
+
+#loadMoreButton {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px;
+  width: 110px;
+  border: none;
+  font-weight: bold;
+  background-color: #3a94ee;
+  border-radius: 5px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  cursor: pointer;
+}
+
+.profileImg {
+  left: 2%;
+  top: 3%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profileName {
+  left: 65px;
+  top: 4%;
+}
+
+.postDate {
+  left: 65px;
+  top: 7%;
+  font-size: small;
+}
+
+.igLogo {
+  right: 2%;
+  top: 5%;
+}
+
+.postImg {
+  left: 2%;
+  top: 15%;
+  width: 96%;
+  height: 58%;
+  background-color: blue;
+}
+
+.postDesc {
+  top: 75%;
+  left: 2%;
+  width: 96%;
+  height: 15%;
+  overflow-y: auto;
+  text-align: start;
+}
+
+.likeImg {
+  left: 2%;
+  top: 95%;
+  cursor: pointer;
+}
+
+.likeCounter {
+  left: 9%;
+  top: 95%;
+}
+
+.hr {
+  top: 93%;
+  left: 2%;
+  padding: 2% 0;
+  width: 96%;
+  border-top: solid 0.5px rgba(70, 69, 69, 0.287);
+}
+
+@media all and (max-width: 767px) {
+  .card {
+    display: block;
+    min-width: 300px;
+    max-width: 50vw;
+    margin: 20px auto;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .card {
+    display: inline-block;
+    min-width: 350px;
+    max-width: 50vw;
+  }
+}
+
+@media all and (min-width: 993px) {
+  .card {
+    margin: 20px 5px;
+    max-width: none;
+    min-width: 23vw;
+  }
+}
